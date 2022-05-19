@@ -1,5 +1,4 @@
-CREATE TABLE CUSTLOC (c_area VARCHAR2(20), c_city VARCHAR2(20));
-ALTER TABLE custloc ADD CONSTRAINT UNIQUE (c_area);
+CREATE TABLE CUSTLOC (c_area VARCHAR2(20) UNIQUE, c_city VARCHAR2(20));
 
 INSERT INTO CUSTLOC VALUES ('Velachery','Chennai');
 INSERT INTO CUSTLOC VALUES ('Thousand Lights','Chennai');
@@ -79,6 +78,21 @@ INSERT INTO subscription VALUES (109, 1500, 'Juhu', 200);
 INSERT INTO subscription VALUES (110, 1150, 'Ameerpet', 50);
 INSERT INTO subscription VALUES (111, 1350, 'Nampally', 100);
 INSERT INTO subscription VALUES (112, 1600, 'Sanath Nagar', 200);
+INSERT INTO subscription VALUES (113, 1200, 'Velachery', 100);
+INSERT INTO subscription VALUES (114, 1100, 'Thousand Lights', 50);
+INSERT INTO subscription VALUES (115, 1400, 'Parrys', 100);
+INSERT INTO subscription VALUES (116, 1500, 'Thousand Lights', 200);
+INSERT INTO subscription VALUES (117, 1300, 'Velachery', 200);
+INSERT INTO subscription VALUES (118, 1750, 'Netaji Nagar', 150);
+INSERT INTO subscription VALUES (119, 1900, 'Khan Market', 50);
+INSERT INTO subscription VALUES (120, 950, 'Khan Market', 50);
+INSERT INTO subscription VALUES (121, 700, 'Siri Fort', 50);
+INSERT INTO subscription VALUES (122, 1900, 'IC Colony', 150);
+INSERT INTO subscription VALUES (123, 2200, 'Huzefa Nagar', 250);
+INSERT INTO subscription VALUES (124, 850, 'Juhu', 75);
+INSERT INTO subscription VALUES (125, 1850, 'Ameerpet', 200);
+INSERT INTO subscription VALUES (126, 1900, 'Nampally', 200);
+INSERT INTO subscription VALUES (127, 1100, 'Sanath Nagar', 50);
 
 CREATE TABLE cust_subscription
 (
